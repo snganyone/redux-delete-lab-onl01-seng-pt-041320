@@ -7,10 +7,10 @@ class Band extends Component {
   }
 
   render() {
-    console.log(this.props);
     return(
       <div>
-        {this.props.bands.length > 0 ? this.props.bands.map((band, id) => <li key={id}>{band.name}<button onClick={() => this.props.delete(this.props.delete(band.id))}>DELETE</button></li>) : null}
+        <li>{this.props.name}</li>
+        <button onClick={this.handleDelete}>DELETE</button>
       </div>
     );
   }

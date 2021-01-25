@@ -1,10 +1,10 @@
 import React from 'react';
 import Band from './Band';
 
-const Band = props => {
+const Bands = props => {
     return(
-        <div>{props.bands.map(band => <Band key={band.id} {...band} delete={this.props.delete}/>)}</div>
+        <div>{props.bands.map(band => <Band key={band.id} {...band} delete={props.delete}/>)}</div>
     )
 }
 
-export default Band;
+export default Bands;
