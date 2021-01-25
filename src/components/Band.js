@@ -5,7 +5,7 @@ class Band extends Component {
   render() {
     return(
       <div>
-        {this.props.text}
+        {this.props.bands.map(band => <li key={band.id}>{band.name}</li>)}
       </div>
     );
   }
